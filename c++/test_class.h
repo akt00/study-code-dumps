@@ -8,6 +8,7 @@ class Test {
 private:
 	int value;
 public:
+    // "this" is a pointer to the object itself. *this = rvalue of the obj, this = pointer to mem location
 	// providing default values invokes default constructor
 	explicit Test(int val = 99) {
 		std::cout << "constructor called" << std::endl;
