@@ -8,6 +8,7 @@
 template<typename T, typename U>
 T generate_array(int size) {
 	std::srand(static_cast<unsigned int>(std::time(0)));
+	// if constexpr enables dynamic return type by pruning if branches
 	if constexpr (std::is_same < T, std::vector<U> >::value) {
 		std::vector<U> tmp;
 		for (auto i = 0; i < size; i++) {
