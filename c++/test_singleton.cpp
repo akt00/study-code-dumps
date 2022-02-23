@@ -39,7 +39,7 @@ public:
 
 Singleton* Singleton::instance = nullptr; // should be initialized in a tranlation unit
 
-void test_singleton {
+void test_singleton() {
 	auto instance = Singleton::getInstance();
 	std::cout << instance << std::endl;
 	std::cout << typeid(instance).name() << std::endl;
