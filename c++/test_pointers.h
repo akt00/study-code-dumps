@@ -7,17 +7,19 @@
 void test_pointers() {
 	int a = 5;
 	int* b;
-	int** c = new int*; // necessary
+	int** c;
 	
 	b = &a;
-	*c = b;
-	std::cout << "*c=b" << std::endl;
+	
+	c = &b;
+	std::cout << "c=&b" << std::endl;
 	std::cout << "a=" << a << " &a=" << &a << std::endl;
 	std::cout << "*b=" << *b << " b=" << b << " &b=" << &b << std::endl;
 	std::cout << "**c=" << **c << " *c=" << *c << " c=" << c << " &c=" << &c << std::endl;
-
-	c = &b;
-	std::cout << "c=&b" << std::endl;
+	
+	c = new int*;  // necessary
+	*c = b;
+	std::cout << "*c=b" << std::endl;
 	std::cout << "a=" << a << " &a=" << &a << std::endl;
 	std::cout << "*b=" << *b << " b=" << b << " &b=" << &b << std::endl;
 	std::cout << "**c=" << **c << " *c=" << *c << " c=" << c << " &c=" << &c << std::endl;
