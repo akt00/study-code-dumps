@@ -6,8 +6,8 @@
 
 void test_pointers() {
 	int a = 5;
-	int* b = new int;
-	int** c = new int*;
+	int* b;
+	int** c = new int*; // necessary
 	
 	b = &a;
 	*c = b;
