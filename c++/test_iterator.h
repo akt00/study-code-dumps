@@ -32,7 +32,7 @@ public:
 		}
 	}
 	Iterator begin() { return Iterator(&m_data[0]); }
-	Iterator end() { return Iterator(&m_data[200]); }
+	Iterator end() { return Iterator(&m_data[200]); } // segv, should be careful in actual implmenetaions
 };
 
 void test() {
