@@ -1,6 +1,7 @@
 #ifndef TEST_PERFECT_FORWARDING
 #define TEST_PERFECT_FORWARDING
 // reference: https://eli.thegreenplace.net/2014/perfect-forwarding-and-universal-references-in-c
+#include<iostream>
 
 template<typename T>
 void testVal(T&& val) {
