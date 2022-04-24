@@ -1,7 +1,7 @@
 #ifndef TEST_DESTRUCTIVE_MOVE
 #define TEST_DESTRUCTIVE_MOVE
 #include<iostream>
-#include<algorithm>
+#include<utility>
 #include<memory>
 
 
