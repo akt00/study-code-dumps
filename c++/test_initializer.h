@@ -1,5 +1,5 @@
-#ifndef TEST_BRACKET_INIT
-#define TEST_BRACKET_INIT
+#ifndef TEST_INITIALIZER
+#define TEST_INITIALIZER
 
 class Foo {
 private:
@@ -17,4 +17,4 @@ bool foo(int a, int b) {
 	return flag;
 }
 
-#endif
+#endif // TEST_INITIALIZER
