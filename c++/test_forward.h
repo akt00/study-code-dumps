@@ -1,6 +1,8 @@
 #ifndef TEST_FORWARD
 #define TEST_FORWARD
-
+#include<iostream>
+#include<utility>
+#include<memory>
 // accepts only rvalue
 void test_forward_helper(int&& arg) {
     std::cout << arg << std::endl;
