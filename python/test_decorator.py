@@ -1,24 +1,30 @@
-def smart_divide(func):
-    def inner(a, b):
-        print("I am going to divide", a, "and", b)
-        if b == 0:
-            print("Whoops! cannot divide")
-            return
-
-        return func(a, b)
-    return inner
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
 
 
-@smart_divide
-def divide(a, b):
-    print(a/b)
+@my_decorator
+def say_whee():
+    print("Whee!")
 
 
-def test_args(*args):
-    print(args)
+def base(func):
+    def wrapper(x):
+        ret = func(x)
+        return ret ** 2 + 1
+    return wrapper
 
 
-if __name__ == "__main__":
-    test_args("hello", "world", "from")
+@base
+def calc(x):
+    return x ** 2
 
-    divide(10, 0)
+
+if __name__ == '__main__':
+
+    say_whee()
+    print(calc(2))
+
