@@ -33,7 +33,7 @@ void test_casting() {
 	std::cout << "type ba = " << typeid(ba).name() << std::endl;
 
 	// downcast with dynamic_cast only awllowed with polymophic class with virtual functions to store vtable
-	// 
+	// downcast is only allowed when the derived class implements virtual fucntions of the parent class
 	auto ba_ptr = dynamic_cast<A*>(&b); // upcast allowed
 	std::cout << "type ba_ptr = " << typeid(ba_ptr).name() << std::endl;
 	// auto bab_ptr = dynamic_cast<B*>()
