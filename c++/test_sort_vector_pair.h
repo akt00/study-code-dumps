@@ -1,3 +1,9 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
 void test_sort_vector_pair() {
 	using ivec = vector<int>;
 	using svec = vector<string>;
