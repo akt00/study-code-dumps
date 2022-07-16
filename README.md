@@ -1,2 +1,5 @@
 # test_code_dumps
-test code dumps for study
+random test code
+
+# Purpose
+Self-study
