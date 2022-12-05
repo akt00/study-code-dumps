@@ -1,5 +1,6 @@
 #  inheritance
 #  classmethod
+#  item 39
 
 class Worker:
     def __init__(self, input_data):
