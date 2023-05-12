@@ -1,0 +1,15 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (AlgorithmTest.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  pch.cpp
+  DecisionTreeTest.cpp
+  DisjointSetTest.cpp
+  ListTest.cpp
+  QueueTest.cpp
+  StackTest.cpp
+  SortTest.cpp
+C:\Users\Aki\Desktop\algorithms\Algorithms\sort\radix_sort.h(7,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Aki\Desktop\algorithms\Algorithms\sort\radix_sort.h(36,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Aki\Desktop\algorithms\AlgorithmTest\SortTest.cpp(125,55): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Aki\Desktop\algorithms\AlgorithmTest\SortTest.cpp(137,56): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  UtilsTest.cpp
+  Generating Code...
+  AlgorithmTest.vcxproj -> C:\Users\Aki\Desktop\algorithms\x64\Release\test.exe

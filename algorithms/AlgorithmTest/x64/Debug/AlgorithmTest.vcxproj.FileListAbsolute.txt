@@ -1,0 +1,2 @@
+C:\Users\Aki\source\repos\Algorithms\AlgorithmTest\x64\Debug\AlgorithmTest.vcxproj.CopyComplete
+C:\Users\Aki\Desktop\algorithms\AlgorithmTest\x64\Debug\AlgorithmTest.vcxproj.CopyComplete

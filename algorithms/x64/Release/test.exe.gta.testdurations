@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\Aki\Desktop\algorithms\x64\Release\test.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="ListTest.TestEmpty" Duration="1" />
+    <TestDuration Test="ListTest.TestPushPop" Duration="1" />
+    <TestDuration Test="ListTest.TestInsertion" Duration="1" />
+    <TestDuration Test="ListTest.TestIterator" Duration="1" />
+    <TestDuration Test="ListTest.TestMerge" Duration="1" />
+    <TestDuration Test="ListTest.TestMergesort" Duration="1" />
+    <TestDuration Test="QueueTest.TestEmpty" Duration="1" />
+    <TestDuration Test="QueueTest.TestInsertion" Duration="1" />
+    <TestDuration Test="QueueTest.TestBasics" Duration="1" />
+    <TestDuration Test="QueueTest.TestSwap" Duration="1" />
+    <TestDuration Test="StackTest.TestEmpty" Duration="1" />
+    <TestDuration Test="StackTest.TestInsertion" Duration="1" />
+    <TestDuration Test="StackTest.TestBasics" Duration="1" />
+    <TestDuration Test="StackTest.TestSwap" Duration="1" />
+    <TestDuration Test="SortTest.TestInsertionsort" Duration="681" />
+    <TestDuration Test="SortTest.TestQuicksort" Duration="56" />
+    <TestDuration Test="SortTest.TestHeapsort" Duration="42" />
+    <TestDuration Test="SortTest.TestMergesort" Duration="129" />
+    <TestDuration Test="SortTest.TestCountingsort" Duration="20" />
+    <TestDuration Test="UtilsTest.TestFindMinIndex" Duration="1" />
+    <TestDuration Test="UtilsTest.TestFindMaxIndex" Duration="1" />
+    <TestDuration Test="UtilsTest.SequentialSearch" Duration="1" />
+    <TestDuration Test="UtilsTest.TestBinarySearch" Duration="1" />
+    <TestDuration Test="UtilsTest.TestGenerateRandomArray" Duration="1" />
+    <TestDuration Test="UtilsTest.TestGenerateValidateSortedArray" Duration="2" />
+    <TestDuration Test="UtilsTest.TestLoadCSV" Duration="1" />
+    <TestDuration Test="UtilsTest.TestParseLinesCSV" Duration="1" />
+    <TestDuration Test="UtilsTest.TestLoadIris" Duration="1" />
+    <TestDuration Test="UtilsTest.TestTranspose2dVector" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
