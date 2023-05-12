@@ -5,18 +5,6 @@
 
 # Requirements
   Requires C++17 or later. This library is written with C++ standard libraries with no external dependencies.
- 
-# Implemeted algorithms (planned)
-  - container
-  - dynamic programming
-  - graph
-  - greedy algortihm
-  - hash table
-  - sort
-  - tree
-  - utilility
-    - seaquential search
-    - binary search
 
 # Introduction to Algorithms 3rd edition
  Chapter 2
