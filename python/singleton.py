@@ -4,7 +4,7 @@ from typing import Generator, Any, Callable
 import random
 
 
-def singleton_generator(method: Callable[[Any, Any], Generator]):
+def singleton_generator(method: Callable[..., Generator]):
     instances = {}
 
     def wrapper(*args, **kwargs):
