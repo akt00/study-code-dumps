@@ -24,10 +24,9 @@ void remove_head(Node** head) {
 	}
 }
 
-void remove_entry(Node** head, Node* entry) {
-	Node** indir = head;
+void remove_entry(Node** indir, Node* entry) {
 	while ((*indir) != entry) indir = &(*indir)->next;
-	auto copy = *indir;
+	auto* copy = *indir;
 	*indir = entry->next;
 	delete copy;
 }
