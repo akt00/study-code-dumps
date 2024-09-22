@@ -2,44 +2,50 @@
 #include <iostream>
 
 
-struct node {
+struct Node {
 	int key;
-	node* next;
+	Node* next;
 };
 
-node* head;
-
-void init() {
-	head = nullptr;
+Node* init_list() {
+	return nullptr;
 }
 
-void add(int key) {
-	auto tmp = new node{ key, head };
-	head = tmp;
+void add_node(Node** head, int key) {
+	auto* new_head = new Node{key, *head};
+	*head = new_head;
 }
 
-void remove() {
-	if (head) {
-		auto tmp = head;
-		head = head->next;
-		delete tmp;
+void remove_head(Node** head) {
+	if (*head) {
+		Node* temp = *head;
+		*head = (*head)->next;
+		delete temp;
 	}
 }
 
-void remove_entry(node* entry) {
-	node** indir = &head;
-	// indir = &head
-	// *indir = head
+void remove_entry(Node** head, Node* entry) {
+	Node** indir = head;
 	while ((*indir) != entry) indir = &(*indir)->next;
 	auto copy = *indir;
-	// change the address pointed to by indir to entry->next
 	*indir = entry->next;
 	delete copy;
 }
 
-void print_list() {
+void print_list(Node* head) {
 	while (head) {
-		std::cout << head->key << std::endl;
+		std::cout << head->key << "->";
 		head = head->next;
 	}
+	std::cout << "nullptr" << std::endl;
+}
+
+int main(void) {
+	Node* head = init_list();
+	for (int i = 0;i < 5;i++) {
+		add_node(&head, i);
+	}
+	remove_head(&head);
+	remove_entry(&head, head->next->next);
+	print_list(head);
 }
